@@ -74,6 +74,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB9DCBFF28FD62700059E668 /* Build configuration list for PBXNativeTarget "InstagrammApp" */;
 			buildPhases = (
+				BB9DCC0228FD77610059E668 /* SwiftLint */,
 				BB9DCBE728FD626F0059E668 /* Sources */,
 				BB9DCBE828FD626F0059E668 /* Frameworks */,
 				BB9DCBE928FD626F0059E668 /* Resources */,
@@ -132,6 +133,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB9DCC0228FD77610059E668 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB9DCBE728FD626F0059E668 /* Sources */ = {
