@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB8EBBEC28FDE09A00326243 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8EBBEB28FDE09A00326243 /* HomeViewController.swift */; };
+		BB8EBBEF28FDE11D00326243 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8EBBEE28FDE11D00326243 /* SearchViewController.swift */; };
+		BB8EBBF228FDE16000326243 /* AddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8EBBF128FDE16000326243 /* AddingViewController.swift */; };
+		BB8EBBF528FDE18800326243 /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8EBBF428FDE18800326243 /* LikesViewController.swift */; };
+		BB8EBBF828FDE1BC00326243 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8EBBF728FDE1BC00326243 /* ProfileViewController.swift */; };
+		BB8EBBFA28FDF02900326243 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8EBBF928FDF02900326243 /* Colors.xcassets */; };
 		BB9DCBEF28FD626F0059E668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9DCBEE28FD626F0059E668 /* AppDelegate.swift */; };
 		BB9DCBF128FD626F0059E668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9DCBF028FD626F0059E668 /* SceneDelegate.swift */; };
 		BB9DCBF328FD626F0059E668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9DCBF228FD626F0059E668 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB8EBBEB28FDE09A00326243 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BB8EBBEE28FDE11D00326243 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BB8EBBF128FDE16000326243 /* AddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingViewController.swift; sourceTree = "<group>"; };
+		BB8EBBF428FDE18800326243 /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
+		BB8EBBF728FDE1BC00326243 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BB8EBBF928FDF02900326243 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		BB9DCBEB28FD626F0059E668 /* InstagrammApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagrammApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9DCBEE28FD626F0059E668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB9DCBF028FD626F0059E668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB8EBBEA28FDE07F00326243 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BB8EBBEB28FDE09A00326243 /* HomeViewController.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		BB8EBBED28FDE0F400326243 /* SearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BB8EBBEE28FDE11D00326243 /* SearchViewController.swift */,
+			);
+			path = SearchScreen;
+			sourceTree = "<group>";
+		};
+		BB8EBBF028FDE14A00326243 /* AddingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BB8EBBF128FDE16000326243 /* AddingViewController.swift */,
+			);
+			path = AddingScreen;
+			sourceTree = "<group>";
+		};
+		BB8EBBF328FDE16B00326243 /* LikesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BB8EBBF428FDE18800326243 /* LikesViewController.swift */,
+			);
+			path = LikesScreen;
+			sourceTree = "<group>";
+		};
+		BB8EBBF628FDE19900326243 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BB8EBBF728FDE1BC00326243 /* ProfileViewController.swift */,
+			);
+			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
 		BB9DCBE228FD626E0059E668 = {
 			isa = PBXGroup;
 			children = (
@@ -59,8 +111,14 @@
 				BB9DCBEE28FD626F0059E668 /* AppDelegate.swift */,
 				BB9DCBF028FD626F0059E668 /* SceneDelegate.swift */,
 				BB9DCBF228FD626F0059E668 /* ViewController.swift */,
+				BB8EBBEA28FDE07F00326243 /* HomeScreen */,
+				BB8EBBED28FDE0F400326243 /* SearchScreen */,
+				BB8EBBF028FDE14A00326243 /* AddingScreen */,
+				BB8EBBF328FDE16B00326243 /* LikesScreen */,
+				BB8EBBF628FDE19900326243 /* ProfileScreen */,
 				BB9DCBF428FD626F0059E668 /* Main.storyboard */,
 				BB9DCBF728FD62700059E668 /* Assets.xcassets */,
+				BB8EBBF928FDF02900326243 /* Colors.xcassets */,
 				BB9DCBF928FD62700059E668 /* LaunchScreen.storyboard */,
 				BB9DCBFC28FD62700059E668 /* Info.plist */,
 			);
@@ -127,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB9DCBFB28FD62700059E668 /* LaunchScreen.storyboard in Resources */,
+				BB8EBBFA28FDF02900326243 /* Colors.xcassets in Resources */,
 				BB9DCBF828FD62700059E668 /* Assets.xcassets in Resources */,
 				BB9DCBF628FD626F0059E668 /* Main.storyboard in Resources */,
 			);
@@ -160,7 +219,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8EBBEF28FDE11D00326243 /* SearchViewController.swift in Sources */,
+				BB8EBBF228FDE16000326243 /* AddingViewController.swift in Sources */,
+				BB8EBBEC28FDE09A00326243 /* HomeViewController.swift in Sources */,
+				BB8EBBF528FDE18800326243 /* LikesViewController.swift in Sources */,
 				BB9DCBF328FD626F0059E668 /* ViewController.swift in Sources */,
+				BB8EBBF828FDE1BC00326243 /* ProfileViewController.swift in Sources */,
 				BB9DCBEF28FD626F0059E668 /* AppDelegate.swift in Sources */,
 				BB9DCBF128FD626F0059E668 /* SceneDelegate.swift in Sources */,
 			);

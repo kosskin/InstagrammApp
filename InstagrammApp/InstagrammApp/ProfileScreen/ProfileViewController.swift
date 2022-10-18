@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ProfileViewController.swift
 //  InstagrammApp
 //
 //  Created by Валентин Коскин on 17.10.2022.
@@ -7,12 +7,13 @@
 
 import UIKit
 
-/// Класс основного ViewController
-class ViewController: UIViewController {
+/// Экран Профиль
+final class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .orange
+        view.backgroundColor = .red
+
         // Do any additional setup after loading the view.
     }
 }
