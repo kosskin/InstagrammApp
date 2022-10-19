@@ -28,7 +28,7 @@ final class HomeViewController: UIViewController {
         static let zeroLikes = 0
     }
     
-    // MARK: IBOutlets
+    // MARK: IBOutlets 
     
     @IBOutlet private weak var homeTableView: UITableView!
     
