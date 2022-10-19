@@ -99,35 +99,52 @@ final class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
+        users.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 0 {
+        switch indexPath.row {
+        case 0:
             guard let historyCell = tableView.dequeueReusableCell(withIdentifier:
-                                                            Constants.historyCellIndentifier,
-                                                           for: indexPath) as? HistoryCell
+                                                                    Constants.historyCellIndentifier,
+                                                                  for: indexPath) as? HistoryCell
             else { return UITableViewCell() }
             return historyCell
-            
-        } else if indexPath.row == 4 {
-            guard let recomendationCell = tableView.dequeueReusableCell(
-                withIdentifier: Constants.recomendationCellIndentifier,
-                for: indexPath) as? RecomendationCell
+        case 4: guard let recomendationCell = tableView.dequeueReusableCell(withIdentifier:
+                                                                                Constants.recomendationCellIndentifier,
+                                                                            for: indexPath) as? RecomendationCell
             else { return UITableViewCell() }
             return recomendationCell
-            
-        } else {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.contentIndentifier,
+        default:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier:
+                                                            Constants.contentIndentifier,
                                                            for: indexPath) as? ContentCell
             else { return UITableViewCell() }
-            cell.contentNameLabel.text = users[indexPath.row].personName
-            cell.contentImageView.image = UIImage(named: users[indexPath.row].imageName)
-            cell.contentCommentLabel.text = users[indexPath.row].text
-            cell.amountLikesLabel.text = "\(users[indexPath.row].likesCount)"
-
+            cell.updateData(currentCell: users[indexPath.row])
             return cell
         }
+        
+//        if indexPath.row == 0 {
+//            guard let historyCell = tableView.dequeueReusableCell(withIdentifier:
+//                                                            Constants.historyCellIndentifier,
+//                                                           for: indexPath) as? HistoryCell
+//            else { return UITableViewCell() }
+//            return historyCell
+//
+//        } else if indexPath.row == 4 {
+//            guard let recomendationCell = tableView.dequeueReusableCell(
+//                withIdentifier: Constants.recomendationCellIndentifier,
+//                for: indexPath) as? RecomendationCell
+//            else { return UITableViewCell() }
+//            return recomendationCell
+//
+//        } else {
+//            guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.contentIndentifier,
+//                                                           for: indexPath) as? ContentCell
+//            else { return UITableViewCell() }
+//            cell.updateData(currentCell: users[indexPath.row])
+//            return cell
+//        }
     }
 }

@@ -9,15 +9,20 @@ import Foundation
 
 /// Struct for one content of Instagram
 struct Content {
-    var text: String
-    var imageName: String
-    var likesCount: Int
-    var personName: String
+    private let text: String
+    private let imageName: String
+    private let likesCount: Int
+    private let personName: String
     
     init(text: String, imageName: String, likesCount: Int, personName: String) {
         self.text = text
         self.imageName = imageName
         self.likesCount = likesCount
         self.personName = personName
+    }
+    
+    func newContent (newContent: Content) -> (String, String, String, String) {
+        return (newContent.text, newContent.imageName, newContent.personName,
+                String(newContent.likesCount))
     }
 }

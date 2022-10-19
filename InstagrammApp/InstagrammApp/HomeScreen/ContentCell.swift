@@ -16,4 +16,13 @@ final class ContentCell: UITableViewCell {
     @IBOutlet private weak var contentImageView: UIImageView!
     @IBOutlet private weak var contentCommentLabel: UILabel!
     @IBOutlet private weak var amountLikesLabel: UILabel!
+    
+    func updateData(currentCell: Content) {
+        let (commentText, image, userName, likesCount) = currentCell.newContent(newContent: currentCell)
+        
+        self.contentCommentLabel.text = commentText
+        self.contentImageView.image = UIImage(named: image)
+        self.contentNameLabel.text = userName
+        self.amountLikesLabel.text = likesCount
+    }
 }
