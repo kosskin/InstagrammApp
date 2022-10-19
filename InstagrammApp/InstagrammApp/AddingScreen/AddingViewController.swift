@@ -7,14 +7,14 @@
 
 import UIKit
 
-/// Экран Добавление
+/// Screen Adding 
 final class AddingViewController: UIViewController {
+
+    // MARK: Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
-
-        // Do any additional setup after loading the view.
     }
 
 }

@@ -7,13 +7,14 @@
 
 import UIKit
 
-/// Экран Поиск
+/// Screen Searching
 final class SearchViewController: UIViewController {
+    
+    // MARK: Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
 
-        // Do any additional setup after loading the view.
     }
 }

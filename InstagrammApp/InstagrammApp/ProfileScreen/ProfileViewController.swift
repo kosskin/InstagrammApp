@@ -7,13 +7,12 @@
 
 import UIKit
 
-/// Экран Профиль
+/// Screen Profile
 final class ProfileViewController: UIViewController {
+
+    // MARK: Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
-
-        // Do any additional setup after loading the view.
     }
 }

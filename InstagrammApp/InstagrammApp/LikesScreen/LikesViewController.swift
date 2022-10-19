@@ -7,13 +7,14 @@
 
 import UIKit
 
-/// Экран Лайки
+/// Screen Likes
 final class LikesViewController: UIViewController {
+
+    // MARK: Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .purple
-        // Do any additional setup after loading the view.
     }
 
 }

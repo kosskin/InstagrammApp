@@ -7,7 +7,7 @@
 
 import UIKit
 
-/// Класс определяет стартовое View
+/// Class define start View
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
